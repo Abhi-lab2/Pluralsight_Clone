@@ -1,0 +1,191 @@
+* {
+  font-family: "PS TT Commons Roman", "Gotham SSm A", "Gotham SSm B", Arial,
+    sans-serif;
+}
+body{
+  background-color: rgb(24, 24, 24);
+}
+/* NavBar CSS */
+
+/* Heading and title */
+.plans-head {
+  color: #e40084;
+  justify-content: center;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.title {
+  /* border: 1px solid green; */
+  margin:20px auto;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 56px;
+  line-height: 100%;
+  width: 50%;
+}
+
+/* Blocks */
+.generic-block {
+  color: #eeeeee;
+  display: flex;
+  margin-bottom: 85px;
+}
+.block1 {
+  /* border: 1px solid white; */
+  width: 32%;
+  font-size: 18px;
+  line-height: 23.8px;
+  margin-left: 13.5%;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 38px;
+  background-position: 50% 0%;
+  background-size: cover;
+  background-color: #222222;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  /* display: inline; */
+}
+.block1 > a,
+.block2 > a {
+  /* border: 1px solid yellow; */
+  margin-top: 40px;
+}
+.block1 > img,
+.block2 > img {
+  margin-top: 25px;
+  background-color: #222222;
+}
+.plans-btn {
+  padding: 15px 25px;
+  /* height: 1.2rem; */
+  display: block;
+  border: none;
+  border-radius: 3px;
+  font-weight: 650;
+  background: linear-gradient(
+    rgb(241, 86, 86),
+    rgb(209, 42, 92),
+    rgb(211, 103, 53)
+  );
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+  line-height: 18.4px;
+  width: 50%;
+  margin: auto;
+  font-size: 17px;
+}
+.block1 > p,
+.block2 > p {
+  background-color: #222222;
+}
+.block1 > p:last-child,
+.block2 > p:last-child {
+  margin: auto;
+  padding-top: 35px;
+  font-weight: 550;
+}
+span {
+  color: #e40084;
+  font-weight: 20;
+  background-color: #222222;
+}
+/* Second Parellel Block */
+/* 2nd Block - Flex one */
+.block2 {
+  width: 32%;
+  font-size: 18px;
+  line-height: 23.8px;
+  margin-left: 2%;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 38px;
+  background-position: 50% 0%;
+  background-size: cover;
+  background-color: #222222;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.block2 > p {
+  width: 95%;
+  padding-left: 7px;
+}
+.plans-btn2 {
+  padding: 15px 25px;
+  /* height: 1.2rem; */
+  display: block;
+  border: none;
+  border-radius: 3px;
+  font-weight: 650;
+  background: linear-gradient(
+    rgb(15, 18, 235),
+    rgb(16, 13, 168),
+    rgb(17, 37, 216)
+  );
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+  line-height: 18.4px;
+  width: 50%;
+  margin: auto;
+  font-size: 17px;
+}
+
+@media (min-width: 1200px) {
+  .plans-head {
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin-top: 200px;
+    margin-bottom: -10px;
+  }
+
+  .block1 {
+    margin-left: 13.5%;
+  }
+  #navbar {
+    width: 100%;
+  }
+}
+
+/* @media (max-width: 720px) {
+  body {
+    overflow: auto;
+  }
+
+  #right {
+    display: none;
+  }
+
+  #left {
+    justify-content: start;
+    margin-top: 4vh;
+  }
+
+  #signin .logo {
+    margin-bottom: 2vh;
+  }
+
+  #signin .text-input {
+    margin-bottom: 0.7rem;
+  }
+
+  #main-footer {
+    padding-top: 1rem;
+  }
+} */

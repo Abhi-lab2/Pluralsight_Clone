@@ -1,0 +1,84 @@
+#footerdiv{
+    background-color: rgb(34,34,34);
+}
+#maindiv1{
+    display:flex;
+    padding:70px 0px;
+justify-content: space-evenly;
+}
+
+#maindiv1>div>p{
+    color:rgb(127,134,139);
+    font-size: small;
+    font-family: sans-serif;
+    padding: 5px;
+}
+#maindiv1>div>h5{
+    color:white;
+    font-size: small;
+    padding: 4px;
+
+}
+#maindiv2{
+    display:flex;
+    border-top:1px solid grey;
+    border-bottom:1px solid grey;
+
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#maindiv2_img1{
+    width:20px;
+    height:20px;
+}
+#maindiv2>p{
+padding:5px 18px 5px 0px;
+color:rgb(127,134,139);
+font-size: small;
+font-family: sans-serif;
+
+}
+#maindiv3{
+    display:flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+
+}
+#maindiv3_subdiv1{
+    display:flex;
+    width: 32%;
+}
+#maindiv3_img2{
+    width:30px;
+    height: 30px;
+}
+#maindiv3_subdiv2{
+    display:flex;
+    justify-content: space-between;
+    width:50%;
+
+
+}
+#maindiv3_subdiv3{
+    display:flex;
+}
+#maindiv3_subdiv1>p{
+    padding:5px 18px 5px 0px;
+color:rgb(127,134,139);
+font-size: small;
+font-family: sans-serif;
+    
+}
+#maindiv3_subdiv2>p{
+    font-size: small;
+font-family: sans-serif;
+color:white;
+}
+#maindiv3_subdiv3>img{
+    width:14px;
+    height: 14px;
+     padding:15px;
+
+    
+}

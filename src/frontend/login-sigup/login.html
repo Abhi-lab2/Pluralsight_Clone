@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Sign In | Pluralsight</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="left">
+        <div id="signin">
+          <div class="logo">
+            <img
+              src="https://app.pluralsight.com/id/img/login-logo.png"
+              alt="pluralsight"
+            />
+          </div>
+          <form>
+            <div>
+              <label>Email</label>
+              <input type="text" class="text-input" id="email" />
+            </div>
+            <div>
+              <label>Password</label>
+              <input type="password" class="text-input" id="password" />
+            </div>
+            <button type="submit" class="primary-btn">Sign In</button>
+          </form>
+          <div class="links">
+            <a href="#">Forgot Password?</a>
+            <a href="#">Sign in with company or school</a>
+          </div>
+          <div class="or">
+            <hr class="bar" />
+            <hr class="bar" />
+          </div>
+          <a href="../pricinng/pricing.html" class="secondary-btn">Create an account</a>
+        </div>
+        <footer id="main-footer">
+          <p>
+            Copyright &copy; 2004 - 2018, Pluralsight LLC. All rights reserved.
+          </p>
+          <div>
+            <a href="#">Terms of Use </a> | <a href="#">Privacy Policy</a>
+          </div>
+        </footer>
+      </div>
+      <div id="right">
+        <div id="showcase">
+          <div class="showcase-content">
+            <h1 class="showcase-text">
+              <div id="content-banner">
+                <img
+                  src="https://www.pluralsight.com/content/dam/pluralsight2/login/login-h1.png"
+                  alt=""
+                />
+              </div>
+            </h1>
+            <div id="sec-btn">
+              <a href="../pricinng/pricing.html" class="secondary-btn1">Try for free</a>
+            </div>
+            <div id="build-logo">
+              <img
+                src="https://www.pluralsight.com/content/dam/pluralsight2/logos/logo-build-better.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+
+ 
+
+
+
+
+  document.querySelector("form").addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    var input1 = document.querySelector("#email").value;
+    var input2 = document.querySelector("#password").value;
+
+    async function login(){
+    try {
+      let res = await fetch("http://localhost:5000/login",{
+            method:"POST",
+            body:JSON.stringify({
+              email:input1,
+              password:input2,
+
+            }),
+            headers:{
+                "Content-Type":"application/json",
+            },
+        });
+         let data = await res.json();
+         move(data);
+    } catch (error) {
+      console.log('error:', error)
+    }
+   }
+   login();
+  });
+
+  function move(data){
+    if(data.token){
+      alert("Sucessfully logged-in")
+      window.location.href = "../homepage/index.html"
+    }else{
+      alert(data.message)
+    }
+  }
+    
+
+
+
+</script>

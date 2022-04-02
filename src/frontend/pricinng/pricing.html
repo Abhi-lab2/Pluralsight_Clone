@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pricing.css" />
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link
+      rel="shortcut icon"
+      href="../images/pluralsight.png"
+      type="image/x-icon"
+    />
+    <title>Pluralsight Subscription Plans and Pricing</title>
+  </head>
+  <body>
+    <div id="container">
+      <!-- Nav DIV -->
+      <div id="navbar"></div>
+      <!-- Contains DIV -->
+      <div class="plans-head">
+        <h4>PLANS & PRICING</h4>
+      </div>
+      <div class="title">
+        <p>Giving you the skills and insights to build better</p>
+      </div>
+      <div class="generic-block">
+        <div class="block1">
+          <img
+            src="https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/logo-skills.png"
+            alt="skills-logo"
+          />
+          <p>
+            See where your skills stand, master the latest technologies and show
+            off your expertise.
+          </p>
+          <a href="../skillpage/skillsPage.html" class="plans-btn">PICK A PLAN</a>
+          <p>Learn more about Skills <span> > </span></p>
+        </div>
+        <div class="block2">
+          <img
+            src="https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/logo-flow.png"
+            alt="flow-logo"
+          />
+          <p>Maximize productivity and accelerate product release cycles.</p>
+          <a href="../skillpage/skillsPage.html" class="plans-btn2">PICK A PLAN</a>
+          <p>Learn more about Flow <span> > </span></p>
+        </div>
+      </div>
+    </div>
+    <div id="footerdiv"></div>
+  </body>
+</html>
+
+<script type="module">
+  import footer from "../footer/footer.js"
+  import navbar from "../navbar/navbar.js"
+  var ft = document.querySelector("#footerdiv");
+  ft.innerHTML = footer();
+  var nav = document.querySelector("#navbar");
+    nav.innerHTML = navbar();
+</script>

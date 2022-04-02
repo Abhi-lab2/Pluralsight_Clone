@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses details</title>
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="../homepage/images/pluralsight.png"   type="image/x-icon" />    
+    <script src="https://kit.fontawesome.com/0864a310c4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+<style>
+   
+    #box1{
+        display: flex;
+        color:white;
+        background-color: #181818;
+        }
+        #box1>p{
+            padding-top: 35px;
+            margin:10px;
+            padding-bottom: 35px;
+
+
+        }
+        #box2{
+        display: flex;
+        color:white;
+        background-color: #181818;
+        justify-content:space-around ;
+        }
+        #box2subdiv1{
+            width:60%;
+            /* border:1px solid red; */
+            color:white;
+        background-color: #181818;
+
+        }
+        #box2subdiv2{
+            width:30%;
+            height:1000px;
+            /* border:1px solid red; */
+            color:white;
+            
+            background-color: #181818;
+
+            
+        }
+        #box2subdiv2>#box2subdiv2div1{
+            padding:40px;
+            border-bottom:1px solid grey;
+            font-family: sans-serif;
+            background-color:rgb(34,34,34);
+
+        }
+        #box2subdiv2>#box2subdiv2div1>h3{
+            padding: 10px;;
+        }
+        #box2subdiv2>#box2subdiv2div1>p{
+            padding: 9px;
+        }
+        #box2subdiv2>#box2subdiv2div1>button{
+            padding:20px 90px;
+    margin-left: 7px;
+    border:0px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: white;
+    background: 
+  linear-gradient(to right,#F05A28,#EC008C, #F05A28);
+  border-radius: 2px;
+        }
+        #box2subdiv2div2{
+            padding:50px;
+            border-bottom:1px solid grey;
+            font-family: sans-serif;
+            background-color:rgb(34,34,34); 
+        }
+        #box2subdiv2div2>p{
+            /* border:1px solid red; */
+            padding-bottom: 10px;
+        }
+        #box2subdiv2div2subdiv1{
+            display:flex;
+            align-items: center;
+        }
+        #box2subdiv2div2subdiv1>p{
+            padding:15px;
+        }
+        #box2subdiv2p1{
+            padding-left: 55px;
+        }
+        #box2subdiv2div2>h6{
+            color:#EC008C;
+            padding-left: 55px;
+
+        }
+        #box2subdiv2div3{
+            padding:50px;
+            font-family: sans-serif;
+            background-color:rgb(34,34,34); 
+        }
+        #box2subdiv2div3>h3{
+            padding-bottom: 10px;
+
+        }
+        #box2subdiv2div3>p>span{
+            color:#EC008C;
+        }
+           
+        #box2subdiv1{
+            font-family: sans-serif;
+            padding:15px;
+
+        }
+        #star {
+  width: 60px;
+}
+#authorli{
+    display: flex;
+    padding-top: 15px;
+    /* border: 1px solid red;; */
+    width:30%;
+    justify-content: space-between;
+    align-items: center;
+}
+#sort{
+    padding-top: 15px;
+}
+.btn{
+    padding:20px 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border:1px solid white;
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: white;
+    background:transparent; 
+  /* linear-gradient(to right,#F05A28,#EC008C, #F05A28); */
+  border-radius: 2px;
+}
+#intro{
+    /* border:1px solid red; */
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+}
+#long{
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+#athr{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#img{
+border-radius: 50%;
+padding:5px;
+}
+#aname{
+    padding:5px;
+
+
+}
+</style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="box1"><p>Home</p> 
+        <p>></p>                
+        <p>Browse</p>
+        <p>></p>
+        <P>Courses</P>
+    </div>
+    <div id="box2">
+        <div id="box2subdiv1">
+        
+        </div>
+    <div id="box2subdiv2">
+         <div id="box2subdiv2div1"> <h3>Try for free</h3>  
+            <p>Get this course plus top-rated picks in <br> tech skills and other popular topics.</p> 
+           <button onclick="location.href='../skillpage/skillsPage.html'">GET STARTED</button> 
+            <p>₹ 2,299 per month after 10 day trial</p>
+        </div> 
+        <div id="box2subdiv2div2">
+            <p>Your 10 day Premium free trial includes</p>
+            <div id="box2subdiv2div2subdiv1">
+                <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/browse/pink-icons/courses-icon.png" alt="">
+                <p>Expanded library</p>
+            </div>
+            <p id="box2subdiv2p1">This course and over 7,000+ additional courses from our full course library.</p>
+            <div id="box2subdiv2div2subdiv1">
+                <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/browse/pink-icons/hands-on-learning-icon.png" alt="">
+                 <p>Hands-on library</p>
+            </div>
+            <p id="box2subdiv2p1">Practice and apply knowledge faster in real-world scenarios with projects and interactive courses.</p>
+             <h6>*Available on Premium only</h6>
+        </div>  
+        <div id="box2subdiv2div3">
+            <h3>For teams</h3>
+            <p><span>Give up to 10 users</span> access to our full library including this course free for 14 days</p>
+        </div>
+    </div>
+</div>
+    <div id="footerdiv"></div>
+
+</body>
+</html>
+<script type="module" src="./coursedetails.js" ></script>
+
+<script>
+    let course = [JSON.parse(localStorage.getItem("course"))]||[];
+
+
+var d = document.getElementById("box2subdiv1")
+    d.innerHTML="";
+    course.map(function (el) {
+        // let div = document.createElement('div');
+        // div.setAttribute('id', 'qwe');
+
+        let type = document.createElement('h1');
+        type.innerHTML = el.title;
+        type.setAttribute('id', 'heading');
+
+       
+        let ul = document.createElement('div');
+        ul.setAttribute('id', 'authorli');
+
+        let s_img = document.createElement('img');
+        s_img.src =
+            'https://www.nicepng.com/png/full/88-886368_five-yellow-stars-5-stars-black-background.png';
+        s_img.setAttribute('id', 'star');
+
+        let wname = document.createElement('p');
+        wname.innerHTML = 'by ' + el.by;
+        wname.setAttribute('id', 'author');
+
+        let sort = document.createElement('p')
+        sort.innerHTML=el.shortDiscription;
+        sort.setAttribute('id', 'sort');
+
+        let btn = document.createElement("button")
+        btn.innerHTML="➤ PREVIEW THIS COURSE"
+        btn.setAttribute('class', 'btn');
+
+
+        let intro  = document.createElement('h3')
+        intro.innerHTML="What you'll learn"
+        intro.setAttribute('id', 'intro');
+
+         
+        let long = document.createElement('p')
+        long.innerHTML=el.discription;
+        long.setAttribute('id', 'long');
+
+        let h2  = document.createElement('h2')
+        h2.innerHTML="About author"
+        h2.setAttribute('id', 'intro');
+
+        let athr = document.createElement('div');
+        athr.setAttribute('id', 'athr');
+
+        let img = document.createElement('img');
+        img.src =el.Author_Image_URL;
+            
+        img.setAttribute('id', 'img');
+
+        let aname = document.createElement('p');
+        aname.innerHTML = 'by ' + el.author_about;
+        aname.setAttribute('id', 'aname');
+
+
+       athr.append(img,aname)
+
+        ul.append(s_img, wname);
+        
+       d.append(type,ul,sort,btn,intro,long,h2,athr);
+    });
+
+
+
+</script>

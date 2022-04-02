@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#navbar {
+    height: 90px;
+    width: 100vw;
+    overflow: hidden;
+    background-color: rgb(33, 33, 33);
+    font-family: Arial;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* position: fixed; */
+    top: 0;
+}
+#left {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    /* margin: 30px 0 0 20px; */
+    overflow: hidden;
+    align-items: center;
+}
+#right {
+    display: flex;
+    width: 28%;
+    justify-content: space-between;
+    /* margin: 50px 30px 0 0; */
+    align-items: center;
+}
+.PlatformIn {
+    display: none;
+    position: absolute;
+    background-color: rgb(21, 21, 21);
+    /* min-width: 160px; */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    /* z-index: 1; */
+    border: 1px solid rgb(21, 21, 21);
+    height: 450px;
+    width: 70%;
+    /* margin: 30px auto; */
+    gap: 20px;
+}
+.dropdown:hover .PlatformIn {
+    display: flex;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    /* padding: 14px 16px; */
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+#logo {
+    width: 90%;
+    height: 90%;
+}
+.ProductsIn {
+    display: none;
+    position: absolute;
+    background-color: rgb(21, 21, 21);
+    /* min-width: 160px; */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid rgb(21, 21, 21);
+    height: 250px;
+    width: 40%;
+    /* margin: 39px auto; */
+    gap: 10px;
+}
+.dropdown:hover .ProductsIn {
+    display: flex;
+}
+.dropdown:hover .ResourceIn {
+    display: flex;
+}
+.ResourceIn {
+    display: none;
+    position: absolute;
+    background-color: rgb(21, 21, 21);
+    /* min-width: 160px; */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid rgb(21, 21, 21);
+    height: 350px;
+    width: 60.5%;
+    /* margin: 39px auto; */
+}
+.SignIn {
+    display: none;
+    position: absolute;
+    background-color: rgb(21, 21, 21);
+    /* min-width: 160px; */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid rgb(21, 21, 21);
+    height: 150px;
+    width: 19%;
+    /* margin: 29px auto; */
+}
+.dropdown:hover .SignIn {
+    display: flex;
+}
+#navbar p {
+    color: rgb(170, 170, 156);
+    font-size: x-small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#navbar h4 {
+    color: rgb(193, 240, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#navbar h5 {
+    color: rgb(193, 240, 255);
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+#navbar h2 {
+    color: rgb(193, 240, 255);
+}
+#navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}

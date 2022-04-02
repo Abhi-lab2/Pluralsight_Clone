@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Checkout | Pluralsight</title>
+    <link rel="icon" type="image/png"
+        href="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/android-chrome-192x192.png" />
+    <link rel="stylesheet" href="./checkout.css" />
+    <link rel="shortcut icon" href="../homepage/images/pluralsight.png"   type="image/x-icon" />    
+    <script src="https://kit.fontawesome.com/0864a310c4.js" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+    <div id="plural_logo">
+        <img src="https://www.pluralsight.com/buy/static/assets/ps_logo.png" class="plu_img">
+    </div>
+    <div id="top_opt">
+        <div class="acc_pay">
+            <div class="ind_blk">
+                <div class="circle"><span class="material-icons" style="font-size:18px" id="acc_arrow">chevron_right</span></div>
+                <div class="circle_cont">ACCOUNT</div>
+            </div>
+            <div class="line"></div>
+            <div class="ind_blk">
+                   <div class="circle"><span class="material-icons" style="font-size:18px" id="pay_arrow">chevron_right</span></div>
+                <div class="circle_cont">PAYMENT</div>
+            </div>
+            <div class="line"></div>
+            <div class="ind_blk">
+                <div class="circle"><span class="material-icons" style="font-size:18px" id="review_arrow">chevron_right</span></div>
+                <div class="circle_cont">REVIEW</div>
+            </div>
+        </div>
+    </div>
+    <div class="back">
+        <a class="back_to" href="../skillpage/skillsPage.html"> &lt; Back to pricing</a>
+    </div>
+    <div class="main_blk">
+        <div class="main">
+            <div id="srl_no1">
+        <div class="drawer_head">
+            <div class="account">
+            <div class="number"><strong>1</strong></div>
+            <div class="acc_heading">Account details</div>
+            <div class="already">Already have an account?<a class="already_signin" href="../login-sigup/login.html">Sign in</a></div></div>
+        </div>
+        <div id="hidding1">
+            <div class="drawer_blk1"  aria-hidden="false">
+                <div class="acc_data_blk">
+                    <div class="sub_inp">
+                        <label class="labels">First name* 
+                        <div><input class="user_inp" id="first_name" type="text" onfocusout="myFunc_fname()"></div>
+                        <div class="req_feild" id="fname_mand">Required</div>
+                    </label>
+                    </div>
+    
+                    <div class="sub_inp">
+                        <label class="labels">Last name* 
+                        <div><input class="user_inp" id="last_name" type="text" onfocusout="myFunc_lname()"></div>
+                        <div class="req_feild" id="lname_mand">Required</div>
+                    </label>
+                    </div>
+    
+                    <div class="sub_inp">
+                        <label class="labels">Email* 
+                        <div><input class="user_inp" id="email" type="mail" onfocusout="myFunc_mail()"></div>
+                        <div class="req_feild" id="mail_mand">Required</div>
+                    </label>
+                    </div>
+    
+                    <div class="sub_inp">
+                        <label class="labels">Confirm Email* 
+                        <div><input class="user_inp" id="c_email" type="mail" onfocusout="myFunc_cmail()"></div>
+                        <div class="req_feild" id="cmail_mand">Required</div>
+                    </label>
+                    </div>
+    
+                    <div class="sub_inp">
+                        <label class="labels">
+                            <div>Country of residence*</div>
+                            <div><select class="user_inp" id="country" onfocusout="myFunc_country()">
+                                <option value="empty">- Select One -</option> 
+                                <option value="AF">Afghanistan</option>
+                                <option value="AX">Aland Islands</option>
+                                <option value="AL">Albania</option>
+                                <option value="DZ">Algeria</option>
+                                <option value="AS">American Samoa</option>
+                                <option value="AD">Andorra</option>
+                                <option value="AO">Angola</option>
+                                <option value="AI">Anguilla</option>
+                                <option value="AQ">Antarctica</option>
+                                <option value="AG">Antigua And Barbuda</option>
+                                <option value="AR">Argentina</option>
+                                <option value="AM">Armenia</option>
+                                <option value="AW">Aruba</option>
+                                <option value="AU">Australia</option>
+                                <option value="AT">Austria</option>
+                                <option value="AZ">Azerbaijan</option>
+                                <option value="BS">Bahamas</option>
+                                <option value="BH">Bahrain</option>
+                                <option value="BD">Bangladesh</option>
+                                <option value="BB">Barbados</option>
+                                <option value="BY">Belarus</option>
+                                <option value="BE">Belgium</option>
+                                <option value="BZ">Belize</option>
+                                <option value="BJ">Benin</option>
+                                <option value="BM">Bermuda</option>
+                                <option value="BT">Bhutan</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BQ">Bonaire, Saint Eustatius and Saba</option>
+                                <option value="BA">Bosnia and Herzegovina</option>
+                                <option value="BW">Botswana</option>
+                                <option value="BV">Bouvet Island</option>
+                                <option value="BR">Brazil</option>
+                                <option value="IO">British Indian Ocean Territory</option>
+                                <option value="BN">Brunei Darussalam</option>
+                                <option value="BG">Bulgaria</option>
+                                <option value="BF">Burkina Faso</option>
+                                <option value="BI">Burundi</option>
+                                <option value="KH">Cambodia</option>
+                                <option value="CM">Cameroon</option>
+                                <option value="CA">Canada</option>
+                                <option value="CV">Cape Verde</option>
+                                <option value="KY">Cayman Islands</option>
+                                <option value="CF">Central African Republic</option>
+                                <option value="TD">Chad</option>
+                                <option value="CL">Chile</option>
+                                <option value="CN">China</option>
+                                <option value="CX">Christmas Island</option>
+                                <option value="CC">Cocos (Keeling) Islands</option>
+                                <option value="CO">Colombia</option>
+                                <option value="KM">Comoros</option>
+                                <option value="CG">Congo</option>
+                                <option value="CD">Congo, the Democratic Republic of the</option>
+                                <option value="CK">Cook Islands</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="CI">Cote d'Ivoire</option>
+                                <option value="HR">Croatia</option>
+                                <option value="CW">Curacao</option>
+                                <option value="CY">Cyprus</option>
+                                <option value="CZ">Czech Republic</option>
+                                <option value="DK">Denmark</option>
+                                <option value="DJ">Djibouti</option>
+                                <option value="DM">Dominica</option>
+                                <option value="DO">Dominican Republic</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="EG">Egypt</option>
+                                <option value="SV">El Salvador</option>
+                                <option value="GQ">Equatorial Guinea</option>
+                                <option value="ER">Eritrea</option>
+                                <option value="EE">Estonia</option>
+                                <option value="ET">Ethiopia</option>
+                                <option value="FK">Falkland Islands (Malvinas)</option>
+                                <option value="FO">Faroe Islands</option>
+                                <option value="FJ">Fiji</option>
+                                <option value="FI">Finland</option>
+                                <option value="FR">France</option>
+                                <option value="GF">French Guiana</option>
+                                <option value="PF">French Polynesia</option>
+                                <option value="TF">French Southern Territories</option>
+                                <option value="GA">Gabon</option>
+                                <option value="GM">Gambia</option>
+                                <option value="GE">Georgia</option>
+                                <option value="DE">Germany</option>
+                                <option value="GH">Ghana</option>
+                                <option value="GI">Gibraltar</option>
+                                <option value="GR">Greece</option>
+                                <option value="GL">Greenland</option>
+                                <option value="GD">Grenada</option>
+                                <option value="GP">Guadeloupe</option>
+                                <option value="GU">Guam</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="GG">Guernsey</option>
+                                <option value="GN">Guinea</option>
+                                <option value="GW">Guinea-Bissau</option>
+                                <option value="GY">Guyana</option>
+                                <option value="HT">Haiti</option>
+                                <option value="HM">Heard Island and McDonald Islands</option>
+                                <option value="VA">Holy See (Vatican City State)</option>
+                                <option value="HN">Honduras</option>
+                                <option value="HK">Hong Kong</option>
+                                <option value="HU">Hungary</option>
+                                <option value="IS">Iceland</option>
+                                <option value="IN">India</option>
+                                <option value="ID">Indonesia</option>
+                                <option value="IQ">Iraq</option>
+                                <option value="IE">Ireland</option>
+                                <option value="IM">Isle of Man</option>
+                                <option value="IL">Israel</option>
+                                <option value="IT">Italy</option>
+                                <option value="JM">Jamaica</option>
+                                <option value="JP">Japan</option>
+                                <option value="JE">Jersey</option>
+                                <option value="JO">Jordan</option>
+                                <option value="KZ">Kazakhstan</option>
+                                <option value="KE">Kenya</option>
+                                <option value="KI">Kiribati</option>
+                                <option value="KR">Korea, Republic of</option>
+                                <option value="XK">Kosovo</option>
+                                <option value="KW">Kuwait</option>
+                                <option value="KG">Kyrgyzstan</option>
+                                <option value="LA">Lao People's Democratic Republic</option>
+                                <option value="LV">Latvia</option>
+                                <option value="LB">Lebanon</option>
+                                <option value="LS">Lesotho</option>
+                                <option value="LR">Liberia</option>
+                                <option value="LY">Libyan Arab Jamahiriya</option>
+                                <option value="LI">Liechtenstein</option>
+                                <option value="LT">Lithuania</option>
+                                <option value="LU">Luxembourg</option>
+                                <option value="MO">Macao</option>
+                                <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                                <option value="MG">Madagascar</option>
+                                <option value="MW">Malawi</option>
+                                <option value="MY">Malaysia</option>
+                                <option value="MV">Maldives</option>
+                                <option value="ML">Mali</option>
+                                <option value="MT">Malta</option>
+                                <option value="MH">Marshall Islands</option>
+                                <option value="MQ">Martinique</option>
+                                <option value="MR">Mauritania</option>
+                                <option value="MU">Mauritius</option>
+                                <option value="YT">Mayotte</option>
+                                <option value="MX">Mexico</option>
+                                <option value="FM">Micronesia, Federated States of</option>
+                                <option value="MD">Moldova, Republic of</option>
+                                <option value="MC">Monaco</option>
+                                <option value="MN">Mongolia</option>
+                                <option value="ME">Montenegro</option>
+                                <option value="MS">Montserrat</option>
+                                <option value="MA">Morocco</option>
+                                <option value="MZ">Mozambique</option>
+                                <option value="MM">Myanmar</option>
+                                <option value="NA">Namibia</option>
+                                <option value="NR">Nauru</option>
+                                <option value="NP">Nepal</option>
+                                <option value="NL">Netherlands</option>
+                                <option value="AN">Netherlands Antilles</option>
+                                <option value="NC">New Caledonia</option>
+                                <option value="NZ">New Zealand</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="NE">Niger</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="NU">Niue</option>
+                                <option value="NF">Norfolk Island</option>
+                                <option value="MP">Northern Mariana Islands</option>
+                                <option value="NO">Norway</option>
+                                <option value="OM">Oman</option>
+                                <option value="PK">Pakistan</option>
+                                <option value="PW">Palau</option>
+                                <option value="PS">Palestinian Territory, Occupied</option>
+                                <option value="PA">Panama</option>
+                                <option value="PG">Papua New Guinea</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Peru</option>
+                                <option value="PH">Philippines</option>
+                                <option value="PN">Pitcairn</option>
+                                <option value="PL">Poland</option>
+                                <option value="PT">Portugal</option>
+                                <option value="PR">Puerto Rico</option>
+                                <option value="QA">Qatar</option>
+                                <option value="RE">Reunion</option>
+                                <option value="RO">Romania</option>
+                                <option value="RU">Russian Federation</option>
+                                <option value="RW">Rwanda</option>
+                                <option value="BL">Saint Barthelemy</option>
+                                <option value="SH">Saint Helena</option>
+                                <option value="KN">Saint Kitts and Nevis</option>
+                                <option value="LC">Saint Lucia</option>
+                                <option value="MF">Saint Martin (French part)</option>
+                                <option value="PM">Saint Pierre and Miquelon</option>
+                                <option value="VC">Saint Vincent and the Grenadines</option>
+                                <option value="WS">Samoa</option>
+                                <option value="SM">San Marino</option>
+                                <option value="ST">Sao Tome and Principe</option>
+                                <option value="SA">Saudi Arabia</option>
+                                <option value="SN">Senegal</option>
+                                <option value="RS">Serbia</option>
+                                <option value="SC">Seychelles</option>
+                                <option value="SL">Sierra Leone</option>
+                                <option value="SG">Singapore</option>
+                                <option value="SX">Sint Maarten</option>
+                                <option value="SK">Slovakia</option>
+                                <option value="SI">Slovenia</option>
+                                <option value="SB">Solomon Islands</option>
+                                <option value="SO">Somalia</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                <option value="SS">South Sudan</option>
+                                <option value="ES">Spain</option>
+                                <option value="LK">Sri Lanka</option>
+                                <option value="SD">Sudan</option>
+                                <option value="SR">Suriname</option>
+                                <option value="SJ">Svalbard and Jan Mayen</option>
+                                <option value="SZ">Swaziland</option>
+                                <option value="SE">Sweden</option>
+                                <option value="CH">Switzerland</option>
+                                <option value="TW">Taiwan</option>
+                                <option value="TJ">Tajikistan</option>
+                                <option value="TZ">Tanzania, United Republic of</option>
+                                <option value="TH">Thailand</option>
+                                <option value="TL">Timor-Leste</option>
+                                <option value="TG">Togo</option>
+                                <option value="TK">Tokelau</option>
+                                <option value="TO">Tonga</option>
+                                <option value="TT">Trinidad and Tobago</option>
+                                <option value="TN">Tunisia</option>
+                                <option value="TR">Turkey</option>
+                                <option value="TM">Turkmenistan</option>
+                                <option value="TC">Turks and Caicos Islands</option>
+                                <option value="TV">Tuvalu</option>
+                                <option value="UG">Uganda</option>
+                                <option value="UA">Ukraine</option>
+                                <option value="AE">United Arab Emirates</option>
+                                <option value="GB">United Kingdom</option>
+                                <option value="US">United States</option>
+                                <option value="UM">United States Minor Outlying Islands</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="UZ">Uzbekistan</option>
+                                <option value="VU">Vanuatu</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="VN">Viet Nam</option>
+                                <option value="VG">Virgin Islands, British</option>
+                                <option value="VI">Virgin Islands, U.S.</option>
+                                <option value="WF">Wallis and Futuna</option>
+                                <option value="EH">Western Sahara</option>
+                                <option value="YE">Yemen</option>
+                                <option value="ZM">Zambia</option>
+                                <option value="ZW">Zimbabwe</option>
+                            </select></div>
+                            <div class="req_feild" id="contry_mand">Required</div>
+                        </label>
+                    </div>
+    
+                        <div class="sub_inp">
+                            <label class="labels">Company
+                            <div><input class="user_inp" type="text" value=""></div>
+                        </label>
+                        </div>
+
+                        <div class="sub_inp">
+                            <label class="labels">Password*
+                            <div><input class="user_inp" id="pass" type="password" onfocusout="myFunc_pass()"></div>
+                            <div class="req_feild" id="pass_mand">Required</div>
+                        </label>
+                        </div>
+
+                        <div class="sub_inp">
+                            <label class="labels">Confirm Password*
+                            <div><input class="user_inp" id="c_pass" type="password" onfocusout="myFunc_cpass()" value=""></div>
+                            <div class="req_feild" id="cpass_mand">Required</div>
+                        </label>
+                        </div>
+        
+                    
+                </div>
+            </div>
+    
+            <div class="terms_blk">
+                <div class="term_align">
+                    <span><input type="checkbox" class="tick_box"></span>
+                        <span class="by_check">By checking here and continuing, I agree to the <strong data-css-41sc57="">Pluralsight</strong>
+                        <span class="terms_use">Terms of Use.</span>
+                    </span>
+                </div>
+                <div><button id="submitButton" onclick="signup()">Continue</button></div></div>
+        </div>
+            </div>
+
+            <div id="srl_no2">
+                <div class="drawer_head">
+                    <div class="account">
+                    <div class="number"><strong>2</strong></div>
+                    <div class="acc_heading">Payment</div>
+                    </div>
+                </div>
+                <div id="hidding2">
+                    <div class="drawer_blk1"  aria-hidden="false">
+                        <div class="acc_data_blk2">
+                            <div class="pay_head">Select a payment method</div>
+                        </div>
+                        <div id="pay_background">
+                            <div class="pay_line"></div>
+                        <div class="pay_options1">
+                            <div class="opt_circle">
+                                <div><div id="inner_circle"></div></div>
+                                <div>Payment Card</div>
+                            </div>
+                            <div class="card_type">
+                                <div><img class="crd_img" src="https://app.pluralsight.com/unified-payment-method/static/images/visa.svg"></div>
+                                <div><img class="crd_img" src="https://app.pluralsight.com/unified-payment-method/static/images/mastercard.svg"></div>
+                                <div><img class="crd_img" src="https://app.pluralsight.com/unified-payment-method/static/images/discover.svg"></div>
+                            </div>
+                            
+                        </div>
+                        <div class="pay_detail_blk">
+                                <div class="pay_data_blk">
+                                    <div class="sub_inp">
+                                        <label class="pay_label">Name on Card*
+                                        <div><input class="pay_user_inp" id="card_name" type="text" value=""></div>
+                                        <div class="req_feild" id="cardnme_mand">Required</div>
+                                    
+                                    </label>
+                                    </div>
+                    
+                                    <div class="sub_inp">
+                                        <label class="pay_label">Card number* 
+                                        <div><input class="pay_user_inp" id="card_nmbr" type="number" value=""></div>
+                                        <div class="req_feild" id="cardnmbr_mand">Required</div>
+                                    
+                                    </label>
+                                    </div>
+                    
+                                   
+                                    <div class="sub_inp">
+                                        <label class="pay_label">
+                                            <div>Expiration*</div>
+                                            <div id="pay_drop">
+                                            <div id="month">
+                                                <select class="user_inp1" id="card_month">
+                                                    <option class="opt" value="">- Select One - </option>
+                                                    <option class="opt" value="01"> 01 </option>
+                                                    <option class="opt" value="02">02</option>
+                                                    <option class="opt" value="03"> 03 </option>
+                                                    <option class="opt" value="04"> 04 </option>
+                                                    <option class="opt" value="05"> 05 </option>
+                                                    <option class="opt" value="06"> 06 </option>
+                                                    <option class="opt" value="07"> 07 </option>
+                                                    <option class="opt" value="08"> 08 </option>
+                                                    <option class="opt" value="09"> 09 </option>
+                                                    <option class="opt" value="10"> 10 </option>
+                                                    <option class="opt" value="11"> 11 </option>
+                                                    <option class="opt" value="12"> 12 </option>
+                                                 </select> 
+                                            </div>
+                                            <div class="seperator"><strong>\</strong></div>
+                                            <div id="year">
+                                                <select class="user_inp1" id="card_year">
+                                                    <option class="opt" value="">- Select One - </option>
+                                                    <option class="opt" value="21"> 2021 </option>
+                                                    <option class="opt" value="22">2022</option>
+                                                    <option class="opt" value="23">2023 </option>
+                                                    <option class="opt" value="24">2024 </option>
+                                                    <option class="opt" value="25">2025 </option>
+                                                    <option class="opt" value="26">2026 </option>
+                                                    <option class="opt" value="27">2027 </option>
+                                                    <option class="opt" value="28">2028 </option>
+                                                    <option class="opt" value="29">2029 </option>
+                                                    <option class="opt" value="30">2030 </option>
+                                                    <option class="opt" value="31">2031 </option>
+                                                    <option class="opt" value="32">2032 </option>
+                                                 </select> 
+                                            </div>
+                                        </div>
+                                        <div class="req_feild" id="date_mand">Required</div>
+                                        </label>
+                                    </div>
+                                        
+                            
+                                   
+                                        <div class="sub_inp">
+                                            <label class="pay_label">CVV*
+                                            <div>
+                                                <div class="cvv_inp">
+                                                    <div ><input class="cvv_inp1" type="number" id="cvv_nmbr" value=""></div>
+                                                    <div><img class="cvv_img" src="https://static.zuora.com/Resources/108224/Images/cvv_logo.png"/></div>
+                                            </div>
+                                            </div>
+                                            <div class="req_feild" id="cvv_mand">Required</div>
+                                        </label>
+                                        </div>
+
+                                        <div class="sub_inp">
+                                            <label class="pay_label">Address* 
+                                            <div><input class="pay_user_inp" id="address" type="text" value=""></div>
+                                            <div class="req_feild" id="address_mand">Required</div>
+                                        </label>
+                                        </div>
+
+                                        <div class="sub_inp">
+                                            <label class="pay_label">Address(cont.)* 
+                                            <div><input class="pay_user_inp" id="address1" type="text" value=""></div>
+                                            <div class="req_feild" id="address1_mand">Required</div>
+                                        </label>
+                                        </div>
+
+                                        <div class="sub_inp">
+                                            <label class="pay_label">Contry* 
+                                            <div><input class="pay_user_inp" id="card_contry" type="text" value=""></div>
+                                            <div class="req_feild" id="card_contry_mand">Required</div>
+                                        </label>
+                                        </div>
+
+                                        <div class="sub_inp">
+                                            <label class="pay_label">City* 
+                                            <div><input class="pay_user_inp" id="city" type="text" value=""></div>
+                                            <div class="req_feild" id="city_mand">Required</div>
+                                        </label>
+                                        </div>
+
+                                        <div class="sub_inp">
+                                            <label class="pay_label">State* (No state?Enter 'none'.)
+                                            <div><input class="pay_user_inp" id="state" type="text" value=""></div>
+                                            <div class="req_feild" id="state_mand">Required</div>
+                                        </label>
+                                        </div>
+
+                                        <div class="sub_inp">
+                                            <label class="pay_label">Postal Code* 
+                                            <div><input class="pay_user_inp" id="post_code" type="number" value=""></div>
+                                            <div class="req_feild" id="post_mand">Required</div>
+                                        </label>
+                                         </div>
+
+                                         <div>
+                                            <button onclick="payment()" class="review_btn">Review</button>
+                                         </div>
+                            
+                     </div>
+                    </div>
+                    <div class="pay_line"></div>
+                </div>
+            </div>
+     
+         </div>
+         </div>
+
+         <div id="srl_no3">
+            <div class="drawer_head">
+            
+                <div class="account">
+                      <div class="number"><strong>3</strong></div>
+                      <div class="acc_heading">Review and Confirm</div>
+                    
+                      <div class="secure_pay"><div data-css-7lhegg="">Secure checkout</div><img class="secure_img" src="https://www.pluralsight.com/buy/static/assets/icon-lock.svg"></div>
+                   
+                </div>
+             
+            </div>
+            <div id="hidding3">
+                    <div  id="btn_final" class="final_btn"><button onclick="confirm_pay()" class="final_cnfm">Confirm Pay</button></div>
+
+                    <div id="hide_thanks" class="thanks"><div>Successfull... Thank you</div></div>
+            </div>
+     </div>
+     </div>
+           
+
+        <div class="summary">
+            <div><div class="order_head">Order Summary</div>
+            <div class="odr_det">
+                <div class="plan">
+                    <div class="pln_head">PLAN</div>
+                    <div class="pln_det" id="scheme_plan">xxxx</div>
+                </div>
+                <div class="price">
+                    <div class="pln_head">PRICE</div>
+                    <div class="price_det" id="scheme_price">₹00</div>
+                </div>
+            </div>
+
+            <div class="sub_tot">
+                <div>
+                    <div class="sub_title" >Subtotal</div>
+                    <div class="sub_amt" id="plan_sub_total">₹00</div>
+                </div>
+                <div>
+                    <div class="sub_title">Estimated tax ✝</div>
+                    <div class="sub_amt">₹00</div>
+                </div>
+            </div>
+
+            <div class="tot_due">
+                <div class="tot_due_head">Total due today</div>
+                <div class="price_det" id="plan_total">₹00</div>
+            </div>
+        
+        </div>
+        <div class="description"><div>
+            <span>✝</span> Pluralsight is required by law to collect transaction 
+            taxes such as sales tax, VAT, GST or other similar taxes on purchases in some jurisdictions.
+             The actual tax amount will be calculated based on the applicable jurisdictional tax rates when your order is processed.</div>
+             <div class="description"><span>✝✝</span>
+                 Excluding transaction taxes such as sales tax, VAT, GST and other similar taxes</div></div>  
+        
+        </div>
+       
+    </div>
+    </div>
+    </div>
+   
+   
+</body>
+<script src="./checkout.js"></script>
+</html>

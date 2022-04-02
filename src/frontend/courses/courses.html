@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="../homepage/images/pluralsight.png"   type="image/x-icon" />    
+    <script src="https://kit.fontawesome.com/0864a310c4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <style>
+        .sort{
+            color: white;
+            padding-top:10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            font-size: medium;
+            font-family: sans-serif;
+            /* border:1px solid red; */
+        }
+        #box1div1button1div1{
+            background-color: rgb(54,54,56);
+            margin-top: 18px;
+                        /* border:1px solid red; */
+
+        }
+        #box1{
+            width:100%;
+            height:400px;
+            background-color: #181818;
+            background-image: url("https://www.pluralsight.com/content/dam/pluralsight2/browse/backgrounds/bg-hero.png");
+            text-align: center;
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+        }
+        #box1img1{
+            width:100px;
+            height:20px;
+            margin-top: 80px; 
+            /* margin: auto; */
+
+        }
+        #box1h1{
+            width:700px;
+            color:white;
+            font-size: 40px;
+            margin: auto;
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: 700;
+            margin-top: 20px; 
+
+        }
+        #box1p1{
+            color:white;
+            font-weight: bold;
+            text-align: left;
+            font-size: 25px;
+            font-family: "Source Sans Pro", sans-serif;
+            margin-left: 35px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+
+
+        }
+        #box1div1input1{
+            width:80%;
+            /* text-align: left; */
+            height:70%;
+            /* padding:20px; */
+            color:white;
+            font-weight: bolder;
+            background-color: rgb(54,54,56);
+            border:0px;
+            outline: none;
+
+
+            /* border: 1px solid red; */
+  
+        }
+        #box1div1button1{
+            border:2px solid white;
+            padding-top:15px;
+            padding-bottom:15px;
+            padding-left:50px;
+            padding-right:50px;
+            font-weight: bolder;
+
+            color:white;
+            background-color: #181818;
+        }
+        #box1div1{
+            display: flex;
+            justify-content: space-around;
+            
+
+        }#box1div1subdiv1{
+                        width:78%;
+                        background-color: rgb(54,54,56);
+                        height:50px;
+                        /* border: 1px solid red; */
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        margin-left: 5px;
+
+
+
+
+        }
+        #box1div1span1{
+            /* border:1px solid red; */
+            font-size: large;
+            color:white;
+            /* font-weight: bold; */
+            font-family: "Source Sans Pro", sans-serif;
+            /* border: 1px solid red; */
+
+
+        }
+        #box1div1search1{
+            border-left: 1px solid white;
+            width:25px;
+            height: 25px;
+            padding-left: 10px;
+        }
+        #mainbox3{
+            background-color: #181818;
+            border-top:.5px solid grey;
+
+
+
+
+        }
+        #box3{
+            /* border:1px solid red; */
+            width:100%;
+            height:430px;
+            display:flex;
+            background-color: #181818;
+            justify-content: space-around;
+
+        }
+        #box3div1,#box3div2,#box3div3{
+            /* border:1px solid red; */
+            width: 30%;
+        }
+        #box3div1>p{
+            color:white;
+            padding:10px;
+            font-family: sans-serif;
+            font-size: 15px;
+
+        }
+        #box3div1>li{
+            color:white;
+            padding:10px;
+            padding-left: 20px;
+            font-family: sans-serif;
+            font-size: 12px;
+
+        }
+        #box3div2>li{
+            color:white;
+            padding:10px;
+            padding-left: 20px;
+            font-family: sans-serif;
+            font-size: 12px;
+
+        }
+        #box3div3>li{
+            color:white;
+            padding:10px;
+            padding-left: 20px;
+            font-family: sans-serif;
+            font-size: 12px;
+
+        }
+        #box3div2>p{
+            color:white;
+            padding:10px;
+            font-family: sans-serif;
+            font-size: 15px;
+
+        }
+        #box3div3>p{
+            color:white;
+            padding:10px;
+            font-family: sans-serif;
+            font-size: 15px;
+
+        }
+        #mainbox3h3{
+            padding-left: 30px;
+            padding-top: 40px;
+            color:white;
+            font-family: sans-serif;
+
+        }
+        #box2{
+            display: flex;
+            justify-content: space-around;
+            /* border:1px solid red; */
+            background-color: #181818;
+
+        }
+        #box2div1{
+            /* border:1px solid red; */
+            width:25%;
+
+        }
+        #box2div2{
+            /* border:1px solid red; */
+            width:65%;
+            
+
+        } 
+        #box2div1>div{
+            display: flex;
+            align-items: center;
+
+        }
+        #box2div1subdiv1ofp{
+            border-bottom:1px solid grey;
+            justify-content:space-between;
+            align-items: center;
+            color:white;
+            font-family: sans-serif;
+            font-size: 18px;
+            padding: 10px;
+            font-weight:500;
+            
+
+        }
+        #box2div1>div>label{
+            /* border:1px solid red; */
+            color:white;
+            font-family: sans-serif;
+            padding: 8px;
+            font-weight:400;
+
+        }
+        #box2div1>div>input{
+            /* border:1px solid red; */
+            color:white;
+            font-family: sans-serif;
+            margin-left: 20px;
+            background-color: #181818;
+            /* width: 32px; */
+
+        }
+        .cards-ul-flex {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  margin: 15px 0;
+  padding: 0;
+  color:white;
+}
+
+.cards-ul-flex > li {
+  list-style: none;
+  font-size: 15px;
+  /* margin: 0 10px 0 0; */
+  color:white;
+
+}
+
+.cards-ul-flex > img {
+  width: 10px;
+  margin: 0 20px 0 10px;
+  color:white;
+
+}
+#star {
+  width: 60px;
+}
+#box2div2>div{
+    color:white;
+    font-family: sans-serif;
+    padding: 10px;
+}
+#box2div2>div>p{
+    font-weight: 300;
+}
+#qwe{
+    border-bottom: 1px solid grey;
+    padding: 5px;
+    /* border:1px solid red; */
+    width:80%;
+}
+#box2div2subdiv2{
+    align-items: center;;
+display: flex;
+justify-content: flex-end;
+width:90%;
+}
+#box2div2subdiv2>input{
+margin:10px;
+}
+#box2div2subdiv2>p{
+   
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    margin:10px;
+    /* border:1px solid red; */
+    width:35px;
+    height: 35px;;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    padding:7px;
+
+}
+    </style>
+
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="box1" >
+      
+        <img id="box1img1" src="https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/logo-skills.png" alt="">
+         <h1 id="box1h1">Thousands of courses authored by
+            our network of industry experts</h1>
+            <p id="box1p1">Search</p>
+            <div id="box1div1" >  <div id="box1div1subdiv1"><input id="box1div1input1" type="text" placeholder="Search" > <span id="box1div1span1">x</span>
+                <img
+                  id="box1div1search1"
+                  src="https://img.icons8.com/windows/32/ffffff/search--v1.png"
+                /></div>
+                <div><button id="box1div1button1">Sort by</button>
+                    <div id="box1div1button1div1"></div></div>
+            </div>
+    </div>
+    <div id="box2">
+        <div id="box2div1">
+            <div id="box2div1subdiv1ofp">
+               <p>Ways to learn</p>
+               <p>^</p>
+            </div>
+          <div>
+            <input type="radio">
+            <label for="All">All</label>
+        </div>
+        <div>
+            <input type="radio">
+            <label for="Core courses">Core courses</label>
+        </div>
+        <div>
+            <input type="radio">
+            <label for="Expanded courses">Expanded courses</label>
+        </div>
+        <div>
+            <input type="radio">
+            <label for="Labs">Labs</label>
+        </div>
+        <div  id="box2div1subdiv1ofp">
+            <p>Skill level</p>
+            <p>^</p>
+         </div>
+       <div>
+         <input id="cb1" type="checkbox" name="a" onchange="filterCat()" >
+         <label  for="Advanced">Advanced</label>
+     </div>
+     <div>
+         <input id="cb2" type="checkbox" name="a" onchange="filterCat()" >
+         <label for="Beginner">Beginner</label>
+     </div>
+     <div>
+         <input  id="cb3" type="checkbox"  name="a" onchange="filterCat()">
+         <label for="Intermediate">Intermediate</label>
+     </div>
+     <div id="box2div1subdiv1ofp">
+        <p>Subject</p>
+        <p>^</p>
+     </div>
+   <div>
+     <input type="checkbox">
+     <label for="Architecture & construction">Architecture & construction</label>
+ </div>
+ <div>
+     <input type="checkbox">
+     <label for="Business professional">Business professional</label>
+ </div>
+ <div>
+     <input type="checkbox">
+     <label for="Creative professional">Creative professional</label>
+ </div>
+ <div>
+    <input type="checkbox">
+    <label for="Data professional">Data professional</label>
+</div>
+<div>
+    <input type="checkbox">
+    <label for="IT ops">IT ops</label>
+</div>
+<div>
+    <input type="checkbox">
+    <label for="Manufacturing & design">Manufacturing & design</label>
+</div>
+<div>
+    <input type="checkbox">
+    <label for="Information & cyber security">Information & cyber security</label>
+</div>
+<div>
+    <input type="checkbox">
+    <label for="Software development">Software development</label>
+</div>
+        
+<div>
+    <input type="checkbox">
+    <label for="Web development">Web development</label>
+</div>
+        
+        
+
+        </div>
+        <div id="box2div2">
+           <div  id="box2div2subdiv1"></div>
+            <div id="box2div2subdiv2">
+                <p><</p>
+                <input type="radio" name="a"><input type="radio" name="a"><input type="radio" name="a"><input type="radio" name="a"><input type="radio" name="a"><input type="radio" name="a"><input type="radio" name="a"><input type="radio" name="a"><input type="radio" name="a"><input type="radio" name="a">
+                  <p>></p>          
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+   <div id="mainbox3"> 
+       <h3 id="mainbox3h3">Browse by link</h3>
+    <div id="box3">
+    <div id="box3div1"> 
+        <p>Software Development</p>
+        <li>Web Development</li>
+        <li>Mobile Development</li>
+        <li>JavaScript</li>
+        <li>C#</li>
+        <li>Python</li>
+        <li>Node.js</li>
+        <li>View more ></li>
+        <p>Data Professional</p>
+        <p>Architecture & Construction</p>
+    </div>
+    <div id="box3div2">
+        <p>IT Ops</p>
+        <li>IT Certifications</li>
+        <li>Security</li>
+        <li>Database Administration</li>
+        <li>Virtualization</li>
+        <li>IT Networking</li>
+        <li>Servers</li>
+        <li>View more ></li>
+        <p>Business Professional</p>
+        <p>Manufacturing & Design</p>
+    </div>
+    <div id="box3div3">
+        <p>Information & Cyber Security</p>
+        <li>Security Certifications</li>
+        <li>Security Fundamentals</li>
+        <li>Security Auditing</li>
+        <li>Penetration Testing</li>
+        <li>Digital Forensics</li>
+        <li>Malware Analysis</li>
+        <li>View more ></li>
+        <p>Creative Professional</p>
+    </div>
+</div></div>
+
+
+
+
+
+
+
+    <div id="footerdiv"></div>
+</body>
+</html>
+<script type="module" src="./courses.js" ></script>
+<script >
+    var Data ;
+    let url = 'http://localhost:5000/courses';
+
+async function getData(url){
+
+   try{
+    let res= await fetch(url);
+
+      let data = await res.json();
+ 
+      appendData(data); 
+      Data = data;
+     console.log(data);
+
+   }
+   catch(err) {
+       console.log(err);
+   }
+}
+
+getData(url);
+
+// appendData(data); 
+
+function appendData(data){
+    var d = document.getElementById("box2div2subdiv1")
+    d.innerHTML="";
+    data.map(function (el) {
+        let div = document.createElement('div');
+        div.setAttribute('id', 'qwe');
+
+        div.onclick = () => {
+            localStorage.setItem('course', JSON.stringify(el));
+            location.href = '../coursedetails/coursedetails.html';
+        };
+
+        let type = document.createElement('h4');
+        type.innerHTML = el.title;
+        let wname = document.createElement('p');
+        wname.innerHTML = 'by ' + el.by;
+        let ul = document.createElement('ul');
+        ul.setAttribute('class', 'cards-ul-flex');
+        let time = document.createElement('li');
+        time.innerHTML = el.time;
+        let level = document.createElement('li');
+        level.innerHTML = el.level;
+        let rat = document.createElement('li');
+        rat.innerHTML = '(' + el.rating + ')';
+        let img = document.createElement('img');
+        img.src =
+            'https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/level.png';
+        let s_img = document.createElement('img');
+        s_img.src =
+            'https://www.nicepng.com/png/full/88-886368_five-yellow-stars-5-stars-black-background.png';
+        s_img.setAttribute('id', 'star');
+        let c_img = document.createElement('img');
+        c_img.src =
+            ' https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/course/clock.png';
+
+        ul.append(time, c_img, level, img, s_img, rat);
+        div.append(type, wname, ul);
+        document.getElementById("box2div2subdiv1").append(div);
+    });
+}
+
+var z= document.getElementById('box1div1button1')
+z.onclick = () => {
+            my()
+        };
+function my(){
+    var y= document.getElementById('box1div1button1div1')
+    y.innerHTML="";
+
+    var Highest_rated = document.createElement('div');
+    Highest_rated.setAttribute('class', 'sort');
+    Highest_rated.textContent="Highest rated"
+
+    Highest_rated.onclick = () => {
+        Data.sort((a, b) => {
+            return b.rating - a.rating;
+        });
+        appendData(Data); 
+        };
+
+        var Newest = document.createElement('div');
+        Newest.setAttribute('class', 'sort');
+        Newest.textContent="Newest"
+        
+    
+        Newest.onclick = () => {
+        Data.sort((a, b) => {
+            return a.rating - b.rating;
+        });
+
+        appendData(Data);
+            
+        };
+        let atoz = document.createElement('div');
+        atoz.setAttribute('class', 'sort');
+        atoz.innerHTML=`Course A → Z`
+
+        atoz.onclick = () => {
+            console.log(222)
+
+            Data.sort((a, b) => {
+            if (a.title < b.title) {
+                return -1;
+            }
+            if (a.title > b.title) {
+                return 1;
+            }
+            return 0;
+        });
+
+        appendData(Data)            
+        };
+        let ztoa = document.createElement('div');
+        ztoa.setAttribute('class', 'sort'); 
+               ztoa.innerHTML="Course Z ← A"
+
+        ztoa.onclick = (data) => {
+                        console.log(222)
+
+            data.sort((a, b) => {
+            if (a.title < b.title) {
+                return 1;
+            }
+            if (a.title > b.title) {
+                return -1;
+            }
+            return 0;
+        });
+        appendData(data) 
+      };
+        y.append(Highest_rated,Newest,atoz,ztoa)
+
+}
+
+
+
+ function filterCat(){
+    var cb1 = document.getElementById('cb1')
+    var cb2 = document.getElementById('cb2')
+     var cb3 = document.getElementById('cb3')
+     if(cb1.checked==true){
+        var filteredList=Data.filter(function(elem){
+
+           return elem.level =="Advanced";
+            }) ;  
+            appendData(filteredList) 
+        }
+ else if(cb2.checked==true){
+        var filteredList=Data.filter(function(elem){
+  return elem.level =="Beginner";
+}) ;  
+
+console.log(filteredList);
+appendData(filteredList) 
+}
+else if(cb3.checked==true){
+        console.log(3434)
+        var filteredList=Data.filter(function(elem){
+
+  return elem.level =="Intermediate";
+}) ;  
+
+appendData(filteredList) 
+}else{
+    appendData(data)
+}
+}
+
+    </script>
