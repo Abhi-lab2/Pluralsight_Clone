@@ -85,4 +85,4 @@ https://drive.google.com/drive/folders/1tWG8s0n0IslQ66fKwdQ28dgPdl2oX-ED?usp=sha
 
 ### Netlify Link
 
-plurlsightclone.netlify.app
+https://plurlsightclone.netlify.app/
