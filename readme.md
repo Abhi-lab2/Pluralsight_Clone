@@ -8,7 +8,7 @@ _To start with the Project run the following command in terminal in "backend" fo
 
 > After the go to your browser and type `http://localhost:5000/homepage` and you are ready to run and explore our project.
 
----
+----
 
 ### Team Members
 
